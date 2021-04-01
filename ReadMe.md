@@ -1,0 +1,1 @@
+# Mhirba // eslint-config-base

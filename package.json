@@ -1,0 +1,62 @@
+{
+  "name": "@mhirba/eslint-config-base",
+  "version": "1.0.0",
+  "license": "JAM",
+  "author": "Majdi Toumi <majdi@mhirba.com> (https://mhirba.com)",
+  "description": "Mhirba's linter configuration",
+  "keywords": [
+    "mhirba",
+    "config",
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
+  "main": ".eslintrc.js",
+  "files": [
+    ".prettierrc.js"
+  ],
+  "engines": {
+    "node": ">=14.16.0",
+    "yarn": ">=2.4.0"
+  },
+  "scripts": {
+    "test": "yarn test:check && yarn test:format",
+    "test:check": "yarn tsc",
+    "test:format": "yarn eslint --ext .ts tests",
+    "deploy": "yarn pinst --disable ; yarn npm publish ; yarn pinst --enable",
+    "postinstall": "yarn husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/mhirba/eslint-config-base.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-jest": "*",
+    "eslint-plugin-prettier": "*",
+    "prettier": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.36",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-jest": "^24.3.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^5.2.0",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.4",
+    "pinst": "^2.1.6",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.3"
+  },
+  "resolutions": {
+    "@mhirba/eslint-config-react": "portal:/Users/majdi/Crafting/mhirba/packages/eslint-config-react"
+  }
+}
