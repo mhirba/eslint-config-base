@@ -664,6 +664,8 @@ __metadata:
     prettier: ^2.2.1
     typescript: ^4.2.3
   peerDependencies:
+    "@typescript-eslint/eslint-plugin": "*"
+    "@typescript-eslint/parser": "*"
     eslint: "*"
     eslint-config-prettier: "*"
     eslint-plugin-jest: "*"

@@ -1,6 +1,6 @@
 {
   "name": "@mhirba/eslint-config-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "JAM",
   "author": "Majdi Toumi <majdi@mhirba.com> (https://mhirba.com)",
   "description": "Mhirba's linter configuration",
@@ -35,6 +35,8 @@
     "access": "public"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
     "eslint": "*",
     "eslint-config-prettier": "*",
     "eslint-plugin-jest": "*",
@@ -55,8 +57,5 @@
     "pinst": "^2.1.6",
     "prettier": "^2.2.1",
     "typescript": "^4.2.3"
-  },
-  "resolutions": {
-    "@mhirba/eslint-config-react": "portal:/Users/majdi/Crafting/mhirba/packages/eslint-config-react"
   }
 }
