@@ -1,6 +1,6 @@
 {
   "name": "@mhirba/eslint-config-base",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "JAM",
   "author": "Majdi Toumi <majdi@mhirba.com> (https://mhirba.com)",
   "description": "Mhirba's linter configuration",
