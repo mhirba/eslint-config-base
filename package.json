@@ -1,6 +1,6 @@
 {
   "name": "@mhirba/eslint-config-base",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "JAM",
   "author": "Majdi Toumi <majdi@mhirba.com> (https://mhirba.com)",
   "description": "Mhirba's linter configuration",
@@ -17,7 +17,7 @@
   ],
   "engines": {
     "node": ">=14.16.0",
-    "yarn": ">=2.4.0"
+    "yarn": ">=1.16.0"
   },
   "scripts": {
     "test": "yarn test:check && yarn test:format",
